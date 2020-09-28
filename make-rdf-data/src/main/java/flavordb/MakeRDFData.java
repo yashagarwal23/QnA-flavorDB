@@ -11,7 +11,6 @@ import java.io.OutputStream;
 public class MakeRDFData {
     public static String flavor_db_prefix = "http://cosylab.iiitd.edu.in/flavordb/";
     public static String flavor_db_prop_prefix = flavor_db_prefix + "property#";
-    
 
     public static void main(String[] args) {
         OntModel model = ModelFactory.createOntologyModel();

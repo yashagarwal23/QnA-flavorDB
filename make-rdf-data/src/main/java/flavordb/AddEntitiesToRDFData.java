@@ -18,8 +18,8 @@ public class AddEntitiesToRDFData {
     public static String entity_prefix = flavor_db_prefix + "entity#";
 
     // column idx of properties to be added
-    static List<String> props_taken = Arrays.asList("entity_id", "category", "natural_source_name");
-    static List<String> props_name = Arrays.asList("entity_id", "category", "natural_source");
+    static List<String> props_taken = Arrays.asList("entity_id", "category", "natural_source_name", "entity_alias_readable");
+    static List<String> props_name = Arrays.asList("entity_id", "category", "natural_source", "entity_name");
 
     public static void getEntityData(String filepath, OntModel model) {
         List<String[]> entities = Utils.readCSV(filepath);
@@ -66,6 +66,12 @@ public class AddEntitiesToRDFData {
             if(natural_source.length() > 0) {
                 entity_individual.addProperty(props_map.get("natural_source_name"), natural_source);
             }
+        }
+
+        // add entity alias
+        if(props_map.containsKey("entity_alias_readable")) {
+            String entity_name = entity[props_taken_idx.get("entity_alias_readable")].toLowerCase();
+            entity_individual.addProperty(props_map.get("entity_alias_readable"), entity_name);
         }
     }
 }
