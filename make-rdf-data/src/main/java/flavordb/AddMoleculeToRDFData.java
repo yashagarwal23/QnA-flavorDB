@@ -65,7 +65,7 @@ public class AddMoleculeToRDFData {
         if(props_map.containsKey("iupac_name")) {
             String iupac_name = molecule[props_taken_idx.get("iupac_name")];
             if(iupac_name.length() > 0) {
-                iupac_name = URLEncoder.encode(iupac_name, "UTF-8");
+//                iupac_name = URLEncoder.encode(iupac_name, "UTF-8");
                 molecule_individual.addProperty(props_map.get("iupac_name"), iupac_name);
             }
         }
@@ -74,7 +74,7 @@ public class AddMoleculeToRDFData {
         if(props_map.containsKey("common_name")) {
             String common_name = molecule[props_taken_idx.get("common_name")];
             if(common_name.length() > 0) {
-                common_name = URLEncoder.encode(common_name, "UTF-8");
+//                common_name = URLEncoder.encode(common_name, "UTF-8");
                 molecule_individual.addProperty(props_map.get("common_name"), common_name);
             }
         }
@@ -85,7 +85,7 @@ public class AddMoleculeToRDFData {
             if(odor.length() > 0) {
                 String[] odors = odor.split("@");
                 for(String o : odors)
-                    molecule_individual.addProperty(props_map.get("odor"), URLEncoder.encode(o, "UTF-8"));
+                    molecule_individual.addProperty(props_map.get("odor"), o);
             }
         }
 

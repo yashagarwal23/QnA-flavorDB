@@ -64,7 +64,6 @@ public class AddEntitiesToRDFData {
         if(props_map.containsKey("natural_source_name")) {
             String natural_source = entity[props_taken_idx.get("natural_source_name")].toLowerCase();
             if(natural_source.length() > 0) {
-                natural_source = URLEncoder.encode(natural_source, "UTF-8");
                 entity_individual.addProperty(props_map.get("natural_source_name"), natural_source);
             }
         }
