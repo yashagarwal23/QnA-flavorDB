@@ -1,5 +1,7 @@
 package flavordb;
 
+import org.apache.jena.ontology.Individual;
+import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.*;
 
 import java.io.UnsupportedEncodingException;
@@ -19,7 +21,7 @@ public class AddEntitiesToRDFData {
     static List<String> props_taken = Arrays.asList("entity_id", "category", "natural_source_name");
     static List<String> props_name = Arrays.asList("entity_id", "category", "natural_source");
 
-    public static void getEntityData(String filepath, Model model) {
+    public static void getEntityData(String filepath, OntModel model) {
         List<String[]> entities = Utils.readCSV(filepath);
         if(entities == null)
             return;
@@ -29,7 +31,7 @@ public class AddEntitiesToRDFData {
         HashMap<String, Integer> props_taken_idx = new HashMap<>();
 
         for(int i = 0; i < props_taken.size(); i++) {
-            props_map.put(props_taken.get(i), model.createProperty(flavor_db_prop_prefix + props_name.get(i)));
+            props_map.put(props_taken.get(i), model.createDatatypeProperty(flavor_db_prop_prefix + props_name.get(i)));
             props_taken_idx.put(props_taken.get(i), entity_heads.indexOf(props_taken.get(i)));
         }
 
@@ -44,18 +46,18 @@ public class AddEntitiesToRDFData {
         }
     }
 
-    private static void AddEntity(String[] entity, HashMap<String, Property> props_map, HashMap<String, Integer> props_taken_idx, Model model) throws UnsupportedEncodingException {
+    private static void AddEntity(String[] entity, HashMap<String, Property> props_map, HashMap<String, Integer> props_taken_idx, OntModel model) throws UnsupportedEncodingException {
         String entity_id =  entity[0];
-        Resource entity_resource = model.createResource(entity_prefix + entity_id);
+        Individual entity_individual = model.createIndividual(entity_prefix + entity_id, model.createResource(flavor_db_prefix + "Entity"));
 
         // add entity id
         if(props_map.containsKey("entity_id")) {
-            model.add(entity_resource, props_map.get("entity_id"), entity[props_taken_idx.get("entity_id")]);
+            entity_individual.addProperty(props_map.get("entity_id"), entity[props_taken_idx.get("entity_id")]);
         }
 
         // add category
         if (props_map.containsKey("category")) {
-            model.add(entity_resource, props_map.get("category"), entity[props_taken_idx.get("category")]);
+            entity_individual.addProperty(props_map.get("category"), entity[props_taken_idx.get("category")]);
         }
 
         // add natural source
@@ -63,7 +65,7 @@ public class AddEntitiesToRDFData {
             String natural_source = entity[props_taken_idx.get("natural_source_name")].toLowerCase();
             if(natural_source.length() > 0) {
                 natural_source = URLEncoder.encode(natural_source, "UTF-8");
-                model.add(entity_resource, props_map.get("natural_source_name"), natural_source);
+                entity_individual.addProperty(props_map.get("natural_source_name"), natural_source);
             }
         }
     }
