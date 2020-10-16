@@ -8,7 +8,6 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.XSD;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -65,7 +64,6 @@ public class AddMoleculeToRDFData {
         if(props_map.containsKey("iupac_name")) {
             String iupac_name = molecule[props_taken_idx.get("iupac_name")];
             if(iupac_name.length() > 0) {
-//                iupac_name = URLEncoder.encode(iupac_name, "UTF-8");
                 molecule_individual.addProperty(props_map.get("iupac_name"), iupac_name);
             }
         }
@@ -74,7 +72,6 @@ public class AddMoleculeToRDFData {
         if(props_map.containsKey("common_name")) {
             String common_name = molecule[props_taken_idx.get("common_name")];
             if(common_name.length() > 0) {
-//                common_name = URLEncoder.encode(common_name, "UTF-8");
                 molecule_individual.addProperty(props_map.get("common_name"), common_name);
             }
         }
