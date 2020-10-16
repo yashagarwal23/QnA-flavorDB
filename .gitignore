@@ -2,3 +2,5 @@
 data/*
 !data/Readme.md
 .ipynb_checkpoints/
+*.vscode/
+*__pycache__/
