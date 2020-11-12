@@ -1,0 +1,15 @@
+PROPERTY: "pubchem_id"i
+	| "pubchem id"i
+	| "is_natural"i
+	| "odor"i
+	| "iupac_name"i
+	| "iupac name"i
+	| "flavor_profile"i
+	| "flavor profile"i
+	| "common_name"i
+	| "common name"i
+	| "category"i
+	| "natural_source"i
+	| "natural source"i
+	| "entity_id"i
+	| "entity id"i

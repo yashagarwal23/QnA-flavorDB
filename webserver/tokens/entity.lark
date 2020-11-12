@@ -1,0 +1,936 @@
+ENTITY: "egg"i
+      | "bakery products"i
+      | "bread"i
+      | "rye bread"i
+      | "wheaten bread"i
+      | "white bread"i
+      | "wholewheat bread"i
+      | "wort"i
+      | "arrack"i
+      | "beer"i
+      | "bantu beer"i
+      | "brandy"i
+      | "anise brandy"i
+      | "apple brandy"i
+      | "armagnac brandy"i
+      | "blackberry brandy"i
+      | "cherry brandy"i
+      | "cognac brandy"i
+      | "papaya brandy"i
+      | "pear brandy"i
+      | "plum brandy"i
+      | "raspberry brandy"i
+      | "weinbrand brandy"i
+      | "gin"i
+      | "rum"i
+      | "whisky"i
+      | "bourbon whisky"i
+      | "canadian whisky"i
+      | "finnish whisky"i
+      | "japanese whisky"i
+      | "malt whisky"i
+      | "scotch whisky"i
+      | "wine"i
+      | "bilberry wine"i
+      | "botrytized wine"i
+      | "champagne"i
+      | "cider"i
+      | "plum wine"i
+      | "port wine"i
+      | "red wine"i
+      | "rose wine"i
+      | "sake"i
+      | "sherry"i
+      | "sparkling wine"i
+      | "strawberry wine"i
+      | "white wine"i
+      | "coffee"i
+      | "mate"i
+      | "black tea"i
+      | "green tea"i
+      | "roibos tea"i
+      | "barley"i
+      | "crispbread"i
+      | "malt"i
+      | "oats"i
+      | "rice"i
+      | "corn"i
+      | "corn oil"i
+      | "popcorn"i
+      | "sweetcorn"i
+      | "butter"i
+      | "buttermilk"i
+      | "cheese"i
+      | "blue cheese"i
+      | "camembert cheese"i
+      | "cheddar cheese"i
+      | "comte cheese"i
+      | "cottage cheese"i
+      | "cream cheese"i
+      | "domiati cheese"i
+      | "emmental cheese"i
+      | "feta cheese"i
+      | "goat cheese"i
+      | "gruyere cheese"i
+      | "limburger cheese"i
+      | "mozzarella cheese"i
+      | "munster cheese"i
+      | "other cheeses"i
+      | "parmesan cheese"i
+      | "provolone cheese"i
+      | "romano cheese"i
+      | "roquefort cheese"i
+      | "russian cheese"i
+      | "sheep cheese"i
+      | "swiss cheese"i
+      | "tilsit cheese"i
+      | "dairy products"i
+      | "ghee"i
+      | "milk"i
+      | "milk fat"i
+      | "goat milk"i
+      | "milk powder"i
+      | "sheep milk"i
+      | "skimmed milk"i
+      | "yogurt"i
+      | "achilleas"i
+      | "arar"i
+      | "buchu"i
+      | "cajeput"i
+      | "camphor"i
+      | "cascarilla"i
+      | "cedar"i
+      | "chamomile"i
+      | "citronella"i
+      | "citrus peel oil"i
+      | "eucalyptus"i
+      | "fir"i
+      | "geranium"i
+      | "grapefruit peel oil"i
+      | "grass"i
+      | "hops oil"i
+      | "hyacinth"i
+      | "hyssop oil"i
+      | "lemon grass"i
+      | "lemon peel oil"i
+      | "lime peel oil"i
+      | "lovage"i
+      | "mandarin orange peel oil"i
+      | "mastic gum"i
+      | "mentha oil"i
+      | "myrrh"i
+      | "neroli oil"i
+      | "orange oil"i
+      | "orris"i
+      | "clary sage"i
+      | "red sage"i
+      | "spanish sage"i
+      | "sandalwood"i
+      | "sea buckthorns"i
+      | "sweet grass"i
+      | "valerian"i
+      | "wattle"i
+      | "yarrow"i
+      | "ylang-ylang"i
+      | "clam"i
+      | "crab"i
+      | "crayfish"i
+      | "kelp"i
+      | "krill"i
+      | "lobster"i
+      | "mollusc"i
+      | "oyster"i
+      | "prawn"i
+      | "scallop"i
+      | "shellfish"i
+      | "shrimp"i
+      | "trassi"i
+      | "squid"i
+      | "bonito"i
+      | "caviar"i
+      | "codfish"i
+      | "fish"i
+      | "fatty fish"i
+      | "lean fish"i
+      | "fish oil"i
+      | "smoked fish"i
+      | "salmon"i
+      | "artichoke"i
+      | "champaca"i
+      | "jasmine"i
+      | "lavendar"i
+      | "rose"i
+      | "apple"i
+      | "apple sauce"i
+      | "apricot"i
+      | "avocado"i
+      | "babaco"i
+      | "banana"i
+      | "beli"i
+      | "byrsonima crassifolia"i
+      | "cashew apple"i
+      | "cherimoya"i
+      | "coconut"i
+      | "currant"i
+      | "black currant"i
+      | "red currant"i
+      | "white currant"i
+      | "dates"i
+      | "durian"i
+      | "elderberry"i
+      | "feijoa"i
+      | "fig"i
+      | "grape"i
+      | "guava"i
+      | "hogplum"i
+      | "jackfruit"i
+      | "kiwifruit"i
+      | "litchi"i
+      | "loquat"i
+      | "malay apple"i
+      | "mango"i
+      | "melon"i
+      | "musk melon"i
+      | "naranjilla"i
+      | "orange"i
+      | "bitter orange"i
+      | "papaya"i
+      | "mountain papaya"i
+      | "passionfruit"i
+      | "yellow passionfruit"i
+      | "pawpaw"i
+      | "peach"i
+      | "pear"i
+      | "bartlett pear"i
+      | "prickly pear"i
+      | "pepino"i
+      | "pineapple"i
+      | "plum"i
+      | "plumcot"i
+      | "pumpkin"i
+      | "quince"i
+      | "chinese quince"i
+      | "raisin"i
+      | "roseapple"i
+      | "sapodilla"i
+      | "soursop"i
+      | "spineless monkey orange"i
+      | "starfruit"i
+      | "tamarind"i
+      | "woodapple"i
+      | "berry"i
+      | "bilberry"i
+      | "blackberry"i
+      | "blueberry"i
+      | "cherry"i
+      | "bitter cherry"i
+      | "sour cherry"i
+      | "wild cherry"i
+      | "cloudberry"i
+      | "cranberry"i
+      | "gooseberry"i
+      | "lingonberry"i
+      | "loganberry"i
+      | "raspberry"i
+      | "strawberry"i
+      | "strawberry jam"i
+      | "bergamot"i
+      | "citrus fruits"i
+      | "grapefruit"i
+      | "kumquat"i
+      | "lemon"i
+      | "lime"i
+      | "mandarin orange"i
+      | "satsuma orange"i
+      | "tangerine"i
+      | "vanilla"i
+      | "mushroom"i
+      | "truffle"i
+      | "angelica"i
+      | "artemisia"i
+      | "basil"i
+      | "buckwheat"i
+      | "calamus"i
+      | "chervil"i
+      | "coriander"i
+      | "cornmint"i
+      | "dill"i
+      | "fennel"i
+      | "fenugreek"i
+      | "garlic"i
+      | "lemon balm"i
+      | "liqourice"i
+      | "mint"i
+      | "rhubarb"i
+      | "rosemary"i
+      | "sage"i
+      | "spearmint"i
+      | "scotch spearmint"i
+      | "tarragon"i
+      | "thyme"i
+      | "beef"i
+      | "beef processed"i
+      | "chicken"i
+      | "frankfurter sausage"i
+      | "ham"i
+      | "lamb"i
+      | "meat"i
+      | "mutton"i
+      | "pork"i
+      | "sukiyaki"i
+      | "turkey"i
+      | "almond"i
+      | "brazil nut"i
+      | "cocoa"i
+      | "beans"i
+      | "lima beans"i
+      | "kidney beans"i
+      | "peanut"i
+      | "peas"i
+      | "soybean"i
+      | "soybean oil"i
+      | "soybean sauce"i
+      | "filbert"i
+      | "hazelnut"i
+      | "macadamia nut"i
+      | "nuts"i
+      | "pecans"i
+      | "walnut"i
+      | "muskmallow"i
+      | "sesame"i
+      | "allium"i
+      | "alpinia"i
+      | "ceriman"i
+      | "chicory"i
+      | "hops"i
+      | "laurel"i
+      | "myrtle"i
+      | "olive"i
+      | "pine"i
+      | "sassafras"i
+      | "tea"i
+      | "fermented tea"i
+      | "tobacco"i
+      | "watercress"i
+      | "creosote"i
+      | "honey"i
+      | "macaroni"i
+      | "mustard oil"i
+      | "peanut butter"i
+      | "peanut oil"i
+      | "rye"i
+      | "storax"i
+      | "vinegar"i
+      | "anise"i
+      | "anise hyssop"i
+      | "star anise"i
+      | "caraway"i
+      | "cardamom"i
+      | "cassia"i
+      | "celery"i
+      | "cinnamon"i
+      | "clove"i
+      | "cumin"i
+      | "ginger"i
+      | "mace"i
+      | "marjoram"i
+      | "nutmeg"i
+      | "oregano"i
+      | "parsley"i
+      | "pepper"i
+      | "saffron"i
+      | "turmeric"i
+      | "green beans"i
+      | "chive"i
+      | "endive"i
+      | "leek"i
+      | "lettuce"i
+      | "okra"i
+      | "onion"i
+      | "shallot"i
+      | "peppermint"i
+      | "broccoli"i
+      | "brussels sprout"i
+      | "cabbage"i
+      | "cauliflower"i
+      | "horseradish"i
+      | "mustard"i
+      | "radish"i
+      | "turnip"i
+      | "kohlrabi"i
+      | "rutabaga"i
+      | "wasabi"i
+      | "capsicum"i
+      | "cherry pepper"i
+      | "tomato"i
+      | "chayote"i
+      | "cucumber"i
+      | "beetroot"i
+      | "carrot"i
+      | "parsnip"i
+      | "sweet potato"i
+      | "asparagus"i
+      | "cassava"i
+      | "potato"i
+      | "fried potato"i
+      | "allspice"i
+      | "asafoetida"i
+      | "ashgourd"i
+      | "bittergourd"i
+      | "bottlegourd"i
+      | "canola oil"i
+      | "carom seed"i
+      | "chard"i
+      | "apple cider vinegar"i
+      | "colocasia"i
+      | "curry leaf"i
+      | "drumstick leaf"i
+      | "eggplant"i
+      | "flaxseed"i
+      | "jalapeno"i
+      | "kenaf"i
+      | "lotus"i
+      | "nigella seed"i
+      | "kewda"i
+      | "pomegranate"i
+      | "poppy seed"i
+      | "spinach"i
+      | "turkey berry"i
+      | "water chestnut"i
+      | "white pepper"i
+      | "garcinia indica"i
+      | "cluster bean"i
+      | "paneer"i
+      | "pigeon pea"i
+      | "basmati rice"i
+      | "ricotta cheese"i
+      | "silver linden"i
+      | "redskin onion"i
+      | "lemon verbena"i
+      | "cashew nut"i
+      | "burdock"i
+      | "borage"i
+      | "capers"i
+      | "safflower"i
+      | "chestnut"i
+      | "chickpea"i
+      | "pummelo"i
+      | "arabica coffee"i
+      | "japanese persimmon"i
+      | "black crowberry"i
+      | "rocket salad"i
+      | "tartary buckwheat"i
+      | "black huckleberry"i
+      | "sunflower"i
+      | "swamp cabbage"i
+      | "grass pea"i
+      | "lentils"i
+      | "garden cress"i
+      | "mexican oregano"i
+      | "lupine"i
+      | "medlar"i
+      | "mulberry"i
+      | "black mulberry"i
+      | "evening primrose"i
+      | "millet"i
+      | "scarlet bean"i
+      | "pistachio"i
+      | "purslane"i
+      | "red raspberry"i
+      | "black raspberry"i
+      | "sorrel"i
+      | "summer savory"i
+      | "winter savory"i
+      | "cherry tomato"i
+      | "rowanberry"i
+      | "sorghum"i
+      | "dandelion"i
+      | "linden"i
+      | "small leaf linden"i
+      | "wheat"i
+      | "sparkleberry"i
+      | "common verbena"i
+      | "adzuki bean"i
+      | "gram bean"i
+      | "mung bean"i
+      | "climbing bean"i
+      | "muscadine grape"i
+      | "bayberry"i
+      | "elliott's blueberry"i
+      | "canada blueberry"i
+      | "buffalo currant"i
+      | "deerberry"i
+      | "ginseng"i
+      | "longan"i
+      | "pepper c. baccatum"i
+      | "pepper c. chinense"i
+      | "rambutan"i
+      | "red rice"i
+      | "annual wild rice"i
+      | "welsh onion"i
+      | "hard wheat"i
+      | "triticale"i
+      | "komatsuna"i
+      | "pak choy"i
+      | "jostaberry"i
+      | "kai lan"i
+      | "pineappple sage"i
+      | "skunk currant"i
+      | "breakfast cereal"i
+      | "pasta"i
+      | "biscuit"i
+      | "sourdough"i
+      | "spirit"i
+      | "beverage alcolohic other"i
+      | "abalone"i
+      | "abiyuch"i
+      | "acerola"i
+      | "acorn"i
+      | "winter squash"i
+      | "agar"i
+      | "red king crab"i
+      | "alfalfa"i
+      | "amaranth"i
+      | "arrowhead"i
+      | "arrowroot"i
+      | "atlantic herring"i
+      | "atlantic mackerel"i
+      | "painted comber"i
+      | "atlantic pollock"i
+      | "atlantic wolffish"i
+      | "bamboo shoots"i
+      | "striped bass"i
+      | "beaver"i
+      | "beech nut"i
+      | "beluga whale"i
+      | "bison"i
+      | "black bear"i
+      | "alaska blackfish"i
+      | "northern bluefin tuna"i
+      | "bluefish"i
+      | "wild boar"i
+      | "bowhead whale"i
+      | "breadfruit"i
+      | "breadnut tree seed"i
+      | "rapini"i
+      | "brown bear"i
+      | "buffalo"i
+      | "burbot"i
+      | "giant butterbur"i
+      | "american butterfish"i
+      | "butternut"i
+      | "butternut squash"i
+      | "cardoon"i
+      | "caribou"i
+      | "natal plum"i
+      | "carob"i
+      | "common carp"i
+      | "channel catfish"i
+      | "chia"i
+      | "chinese chestnut"i
+      | "garland chrysanthemum"i
+      | "cisco"i
+      | "nuttall cockle"i
+      | "common octopus"i
+      | "corn salad"i
+      | "cottonseed"i
+      | "catjang pea"i
+      | "squashberry"i
+      | "atlantic croaker"i
+      | "cusk"i
+      | "cuttlefish"i
+      | "mule deer"i
+      | "devilfish"i
+      | "dock"i
+      | "dolphin fish"i
+      | "freshwater drum"i
+      | "mallard duck"i
+      | "freshwater eel"i
+      | "elk"i
+      | "emu"i
+      | "oregon yampah"i
+      | "european anchovy"i
+      | "european chestnut"i
+      | "turbot"i
+      | "fireweed"i
+      | "florida pompano"i
+      | "ginkgo nuts"i
+      | "greylag goose"i
+      | "greenland halibut"i
+      | "groundcherry"i
+      | "grouper"i
+      | "haddock"i
+      | "hippoglossus"i
+      | "horse"i
+      | "hyacinth bean"i
+      | "irish moss"i
+      | "pacific jack mackerel"i
+      | "japanese chestnut"i
+      | "jerusalem artichoke"i
+      | "jujube"i
+      | "jute"i
+      | "kale"i
+      | "king mackerel"i
+      | "lambsquarters"i
+      | "leather chiton"i
+      | "common ling"i
+      | "lingcod"i
+      | "white lupine"i
+      | "malabar spinach"i
+      | "mammee apple"i
+      | "purple mangosteen"i
+      | "alpine sweetvetch"i
+      | "milkfish"i
+      | "monkfish"i
+      | "moose"i
+      | "moth bean"i
+      | "mountain yam"i
+      | "striped mullet"i
+      | "muskrat"i
+      | "new zealand spinach"i
+      | "nopal"i
+      | "ocean pout"i
+      | "north pacific giant octopus"i
+      | "ohelo berry"i
+      | "opossum"i
+      | "ostrich"i
+      | "spotted seal"i
+      | "pacific herring"i
+      | "pacific rockfish"i
+      | "common persimmon"i
+      | "pheasant"i
+      | "northern pike"i
+      | "pili nut"i
+      | "colorado pinyon"i
+      | "pitanga"i
+      | "french plantain"i
+      | "american pokeweed"i
+      | "polar bear"i
+      | "prairie turnip"i
+      | "quinoa"i
+      | "european rabbit"i
+      | "raccoon"i
+      | "rainbow smelt"i
+      | "rainbow trout"i
+      | "malabar plum"i
+      | "rose hip"i
+      | "roselle"i
+      | "orange roughy"i
+      | "sablefish"i
+      | "pink salmon"i
+      | "chum salmon"i
+      | "coho salmon"i
+      | "sockeye salmon"i
+      | "chinook salmon"i
+      | "atlantic salmon"i
+      | "salmonberry"i
+      | "common salsify"i
+      | "spanish mackerel"i
+      | "pacific sardine"i
+      | "scup"i
+      | "sea cucumber"i
+      | "steller sea lion"i
+      | "bearded seal"i
+      | "ringed seal"i
+      | "sea trout"i
+      | "sesbania flower"i
+      | "american shad"i
+      | "shark"i
+      | "sheefish"i
+      | "sheepshead"i
+      | "hedge mustard"i
+      | "snapper"i
+      | "spelt"i
+      | "spirulina"i
+      | "squab"i
+      | "squirrel"i
+      | "greater sturgeon"i
+      | "white sucker"i
+      | "pumpkinseed sunfish"i
+      | "swordfish"i
+      | "taro"i
+      | "teff"i
+      | "tilefish"i
+      | "mexican groundcherry"i
+      | "towel gourd"i
+      | "salmonidae"i
+      | "walleye"i
+      | "alaska pollock"i
+      | "whelk"i
+      | "broad whitefish"i
+      | "whitefish"i
+      | "whiting"i
+      | "wild rice"i
+      | "tea leaf willow"i
+      | "winged bean"i
+      | "yam"i
+      | "jicama"i
+      | "yautia"i
+      | "yellowfin tuna"i
+      | "yellowtail amberjack"i
+      | "pollock"i
+      | "albacore tuna"i
+      | "atlantic halibut"i
+      | "smelt"i
+      | "clupeinae"i
+      | "spiny lobster"i
+      | "black-eyed pea"i
+      | "deer"i
+      | "percoidei"i
+      | "perciformes"i
+      | "rabbit"i
+      | "beefalo"i
+      | "bivalvia"i
+      | "flatfish"i
+      | "walrus"i
+      | "alaska wild rhubarb"i
+      | "oriental wheat"i
+      | "yardlong bean"i
+      | "great horned owl"i
+      | "quail"i
+      | "boysenberry"i
+      | "rowal"i
+      | "jew's ear"i
+      | "shiitake"i
+      | "purple laver"i
+      | "wakame"i
+      | "enokitake"i
+      | "epazote"i
+      | "oyster mushroom"i
+      | "cloud ear fungus"i
+      | "maitake"i
+      | "ostrich fern"i
+      | "spot croaker"i
+      | "sourdock"i
+      | "tinda"i
+      | "atlantic menhaden"i
+      | "agave"i
+      | "narrowleaf cattail"i
+      | "jellyfish"i
+      | "anchovy"i
+      | "blue whiting"i
+      | "carp bream"i
+      | "chanterelle"i
+      | "sturgeon"i
+      | "charr"i
+      | "common dab"i
+      | "spiny dogfish"i
+      | "anatidae"i
+      | "anguilliformes"i
+      | "true frog"i
+      | "garfish"i
+      | "gadiformes"i
+      | "mountain hare"i
+      | "lake trout"i
+      | "lemon sole"i
+      | "lumpsucker"i
+      | "scombridae"i
+      | "norway haddock"i
+      | "norway pout"i
+      | "oil palm"i
+      | "sago palm"i
+      | "persimmon"i
+      | "pikeperch"i
+      | "pleuronectidae"i
+      | "rock ptarmigan"i
+      | "pacific ocean perch"i
+      | "black salsify"i
+      | "true seal"i
+      | "red algae"i
+      | "kombu"i
+      | "snail"i
+      | "true sole"i
+      | "catfish"i
+      | "thistle"i
+      | "common tuna"i
+      | "cetacea"i
+      | "columbidae"i
+      | "conch"i
+      | "berry wine"i
+      | "vodka"i
+      | "ice cream"i
+      | "vermouth"i
+      | "madeira wine"i
+      | "nougat"i
+      | "toffee"i
+      | "cake"i
+      | "pizza"i
+      | "ymer"i
+      | "other snack food"i
+      | "pastry"i
+      | "dragée"i
+      | "chewing gum"i
+      | "marzipan"i
+      | "salad dressing"i
+      | "sauce"i
+      | "salt"i
+      | "cream"i
+      | "sugar"i
+      | "sausage"i
+      | "meatball"i
+      | "pate"i
+      | "sugar substitute"i
+      | "meat bouillon"i
+      | "other meat product"i
+      | "whey"i
+      | "casein"i
+      | "fruit preserve"i
+      | "leavening agent"i
+      | "marshmallow"i
+      | "gelatin"i
+      | "water"i
+      | "other fish product"i
+      | "milk human"i
+      | "dumpling"i
+      | "soup"i
+      | "syrup"i
+      | "remoulade"i
+      | "chocolate spread"i
+      | "fruit gum"i
+      | "meringue"i
+      | "cocoa butter"i
+      | "cocoa powder"i
+      | "chocolate"i
+      | "hot chocolate"i
+      | "kefir"i
+      | "other fermented milk"i
+      | "miso"i
+      | "tofu"i
+      | "zwieback"i
+      | "roe"i
+      | "cichlidae"i
+      | "icing"i
+      | "snack bar"i
+      | "green turtle"i
+      | "energy drink"i
+      | "burrito"i
+      | "hamburger"i
+      | "chili"i
+      | "taco"i
+      | "tortilla"i
+      | "nachos"i
+      | "salad"i
+      | "dulce de leche"i
+      | "topping"i
+      | "sweet custard"i
+      | "egg roll"i
+      | "heart of palm"i
+      | "potato chip"i
+      | "tortilla chip"i
+      | "corn chip"i
+      | "hibiscus tea"i
+      | "stew"i
+      | "gelatin dessert"i
+      | "junket"i
+      | "falafel"i
+      | "frybread"i
+      | "other frozen dessert"i
+      | "lasagna"i
+      | "morchella"i
+      | "pancake"i
+      | "pectin"i
+      | "pudding"i
+      | "waffle"i
+      | "soy milk"i
+      | "meatloaf"i
+      | "cocktail"i
+      | "couscous"i
+      | "bulgur"i
+      | "coffee mocha"i
+      | "chimichanga"i
+      | "semolina"i
+      | "tapioca pearl"i
+      | "tostada"i
+      | "quesadilla"i
+      | "baked potato"i
+      | "hot dog"i
+      | "spread"i
+      | "enchilada"i
+      | "nutritional drink"i
+      | "other sandwich"i
+      | "ketchup"i
+      | "breakfast sandwich"i
+      | "adobo"i
+      | "macaroni and cheese"i
+      | "horned melon"i
+      | "hushpuppy"i
+      | "fruit juice"i
+      | "relish"i
+      | "fruit salad"i
+      | "soy yogurt"i
+      | "vegetarian food"i
+      | "cold cut"i
+      | "mixed nuts"i
+      | "babassu palm"i
+      | "cupuau"i
+      | "shea tree"i
+      | "oil-seed camellia"i
+      | "ucuhuba"i
+      | "phyllo dough"i
+      | "cooking oil"i
+      | "pie crust"i
+      | "pie"i
+      | "shortening"i
+      | "soy cream"i
+      | "ice cream cone"i
+      | "molasses"i
+      | "nance"i
+      | "natto"i
+      | "ravioli"i
+      | "scrapple"i
+      | "other pasta dish"i
+      | "succotash"i
+      | "tamale"i
+      | "rice cake"i
+      | "tree fern"i
+      | "evaporated milk"i
+      | "flour"i
+      | "akutaq"i
+      | "pita bread"i
+      | "focaccia"i
+      | "bagel"i
+      | "other bread product"i
+      | "piki bread"i
+      | "french toast"i
+      | "oat bread"i
+      | "potato bread"i
+      | "cornbread"i
+      | "corn grits"i
+      | "multigrain bread"i
+      | "rice bread"i
+      | "pan dulce"i
+      | "raisin bread"i
+      | "wonton wrapper"i
+      | "trail mix"i
+      | "greenthread tea"i
+      | "vegetable juice"i
+      | "horchata"i
+      | "soft drink"i
+      | "milkshake"i
+      | "chocolate mousse"i
+      | "pupusa"i
+      | "empanada"i
+      | "arepa"i
+      | "ascidians"i
+      | "gefilte fish"i
+      | "yellow pond lily"i
+      | "fish burger"i
+      | "other dish"i
+      | "pot pie"i
+      | "stuffing"i
+      | "fudge"i
+      | "candy bar"i
+      | "condensed milk"i
+      | "margarine"i
+      | "margarine like spread"i
+      | "hummus"i
+      | "potato puffs"i
+      | "potato gratin"i
+      | "chinese bayberry"i
+      | "green zucchini"i
+      | "yellow zucchini"i
+      | "saskatoon berry"i
+      | "nanking cherry"i
+      | "japanese pumpkin"i
+      | "guinea hen"i
+      | "cucurbita"i
