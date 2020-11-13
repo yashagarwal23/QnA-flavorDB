@@ -5,6 +5,7 @@ import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.*;
 
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -17,8 +18,8 @@ public class AddEntitiesToRDFData {
     public static String entity_prefix = flavor_db_prefix + "entity#";
 
     // column idx of properties to be added
-    static List<String> props_taken = Arrays.asList("entity_id", "category", "natural_source_name", "entity_alias_readable");
-    static List<String> props_name = Arrays.asList("entity_id", "category", "natural_source", "entity_name");
+    static List<String> props_taken = new ArrayList<>(Arrays.asList("entity_id", "category", "natural_source_name", "entity_alias_readable"));
+    static List<String> props_name = new ArrayList<>(Arrays.asList("entity_id", "category", "natural_source", "entity_name"));
 
     public static void getEntityData(String filepath, OntModel model) {
         List<String[]> entities = Utils.readCSV(filepath);

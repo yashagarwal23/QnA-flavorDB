@@ -61,6 +61,8 @@ token_rules = [
     'SHOW: "show"i',
     'CONTAIN: "contain"i',
     'CONTAINING: "containing"i',
+    'COMMONLY: "commonly"i',
+    'OCCUR: "occur"i',
     ]
 
 templates = [
@@ -90,10 +92,10 @@ templates = [
     {
         "type": "flavor_profile_entity_sentence",
         "rules":[
-            'GET THE? FLAVORS OF entity',
+            'GET THE? FLAVORS (OF | IN) entity',
             '(HOW | WHAT) DOES entity TASTE LIKE?',
             '(HOW | WHAT) DO entity TASTE LIKE?',
-            'FLAVORS OF entity',
+            'FLAVORS (OF | IN) entity',
         ],
         "query":
             """
@@ -127,16 +129,47 @@ templates = [
         """
     },
     {
+        "type": "molecule_commonly_present_with_a_given_molecule_sentence",
+        "rules": [
+            '(GET | FIND | WHAT ARE | SHOW) THE? FLAVOR? MOLECULES THAT ARE COMMONLY PRESENT WITH THE? MOLECULE? molecule',
+            'FLAVOR? MOLECULES THAT ARE COMMONLY PRESENT WITH THE? MOLECULE? molecule',
+            '(GET | FIND | WHAT ARE | SHOW) THE? FLAVOR? MOLECULES THAT COMMONLY OCCUR WITH THE? MOLECULE? molecule',
+            'FLAVOR? MOLECULES THAT COMMONLY OCCUR WITH THE? MOLECULE? molecule',
+        ],
+        "query":
+        """
+            PREFIX prop: <http://cosylab.iiitd.edu.in/flavordb/property#>
+
+            SELECT DISTINCT ?molecule_name (COUNT(?molecule_name) as ?count)
+            WHERE {{
+                ?molecule prop:iupac_name "{molecule}" .
+                ?entity prop:contains ?molecule .
+                ?entity prop:contains ?molecule1 .
+                ?molecule1 prop:iupac_name ?molecule_name .
+                FILTER (?molecule != ?molecule1)
+            }}
+            GROUP BY ?molecule_name
+            HAVING (COUNT(?molecule_name) > 10)
+        """
+    },
+    {
         "type": "entity_that_contain_molecules_sentence",
         "rules": [
-            '(GET | FIND | SHOW | WHAT ARE) THE ENTITIES THAT CONTAIN THE? MOLECULE? molecule',
-            '(GET | FIND | SHOW | WHAT ARE) THE ENTITIES CONTAINING THE? MOLECULE? molecule',
+            '(GET | FIND | SHOW | WHAT ARE) THE? ENTITIES THAT CONTAIN THE? MOLECULE? molecule',
+            '(GET | FIND | SHOW | WHAT ARE) THE? ENTITIES CONTAINING THE? MOLECULE? molecule',
             'ENTITIES THAT CONTAIN THE? MOLECULE? molecule',
             'ENTITIES CONTAINING THE? MOLECULE? molecule',
         ],
         "query":
         """
+            PREFIX prop: <http://cosylab.iiitd.edu.in/flavordb/property#>
 
+            SELECT DISTINCT ?entity_name
+            WHERE {{
+                ?molecule prop:iupac_name "{molecule}" .
+                ?entity prop:contains ?molecule .
+                ?entity prop:entity_name ?entity_name .
+            }}
         """
     },
     {
@@ -245,8 +278,7 @@ templates = [
     {
         "type": "property_of_entity_sentence",
         "rules": [
-            'GET THE? property OF entity',
-            'WHAT IS THE? property OF entity',
+            '(GET | WHAT (ARE | IS) | FIND | SHOW) THE? property OF entity',
             'property OF entity',
         ], 
         "query":
@@ -263,8 +295,7 @@ templates = [
     {
         "type": "property_of_molecule_sentence",
         "rules": [
-            'GET THE? property OF molecule',
-            'WHAT IS THE? property OF molecule',
+            '(GET | WHAT (ARE | IS) | FIND | SHOW) THE? property OF molecule',
             'property OF molecule',
         ], 
         "query":

@@ -31,9 +31,9 @@ public class MakeRDFData {
         AddEntityToMoleculesRDFData.getEntityToMoleculeData("data/fdb_molecules_entities.csv", model, moleculeClass, entityClass);
 
         try {
-            OutputStream os1 = new FileOutputStream("flavor-db-rdf-data-ont-noURLencoding.rdf");
+            OutputStream os1 = new FileOutputStream("flavordb-rdf-data.rdf");
             model.write(os1);
-            OutputStream os2 = new FileOutputStream("flavor-db-rdf-data-ont-noURLencoding-triple-format.rdf");
+            OutputStream os2 = new FileOutputStream("flavordb-rdf-data-triple-format.rdf");
             model.write(os2, "N-TRIPLE");
         } catch (FileNotFoundException e) {
             e.printStackTrace();

@@ -13,3 +13,48 @@ PROPERTY: "pubchem_id"i
 	| "natural source"i
 	| "entity_id"i
 	| "entity id"i
+	| "smile"i
+	| "molecular_weight"i
+	| "molecular weight"i
+	| "hbd_count"i
+	| "hbd count"i
+	| "hba_count"i
+	| "hba count"i
+	| "num_rotatablebonds"i
+	| "num rotatablebonds"i
+	| "complexity"i
+	| "topological_polor_surfacearea"i
+	| "topological polor surfacearea"i
+	| "monoisotopic_mass"i
+	| "monoisotopic mass"i
+	| "exact_mass"i
+	| "exact mass"i
+	| "xlogp"i
+	| "charge"i
+	| "heavy_atom_count"i
+	| "heavy atom count"i
+	| "atom_stereo_count"i
+	| "atom stereo count"i
+	| "defined_atom_stereocenter_count"i
+	| "defined atom stereocenter count"i
+	| "undefined_atom_stereocenter_count"i
+	| "undefined atom stereocenter count"i
+	| "bond_stereo_count"i
+	| "bond stereo count"i
+	| "defined_bond_stereocenter_count"i
+	| "defined bond stereocenter count"i
+	| "undefined_bond_stereocenter_count"i
+	| "undefined bond stereocenter count"i
+	| "isotope_atom_count"i
+	| "isotope atom count"i
+	| "covalently_bonded_unit_count"i
+	| "covalently bonded unit count"i
+	| "cas_id"i
+	| "cas id"i
+	| "fema_number"i
+	| "fema number"i
+	| "volume3d"i
+	| "fooddb_id"i
+	| "fooddb id"i
+	| "functional_groups"i
+	| "functional groups"i
