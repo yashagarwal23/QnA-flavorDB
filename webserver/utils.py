@@ -4,7 +4,7 @@ import urllib
 
 requests.adapters.DEFAULT_RETRIES = 3
 
-sparql_url = "http://35.211.23.47:7200/repositories/c2c2f5c2a0c2h7h7i8b1"
+sparql_url = "http://139.59.7.50:7200/repositories/c2c2f5c2a0c2h7h7i8b1"
 
 start_token = "start"
 
